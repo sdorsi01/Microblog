@@ -4,7 +4,7 @@ from app.forms import LoginForm
 from flask import render_template, flash, redirect
 
 @app.route('/')
-@app.route('/index')
+@app.route('/index', methods=['GET'])
 def index():
     user = {'username': 'Miguel'}
     posts = [
